@@ -32,22 +32,22 @@ Harl::~Harl(void)
 
 void	Harl::debug(void)
 {
-	std::cout << "I love having extra bacon for my 7XL-double-cheese-triple-pickle-special-ketchup burger. I really do!\n" << std::endl;
+	std::cout << "\nI hate when cis people\n" << std::endl;
 }
 
 void	Harl::info(void)
 {
-	std::cout << "I cannot believe adding extra bacon costs more money. You didn’t put enough bacon in my burger! If you did, I wouldn’t be asking for more!\n" << std::endl;
+	std::cout << "\nNo competitions! I refuse to compete with ugly people!\n" << std::endl;
 }
 
 void	Harl::warning(void)
 {
-	std::cout << "I think I deserve to have some extra bacon for free. I’ve been coming for years whereas you started working here since last month.\n" << std::endl;
+	std::cout << "\nI hate when people stare at me as if I wasn't dangerous. If you're not afraid of trans people, you should!\n" << std::endl;
 }
 
 void	Harl::error(void)
 {
-	std::cout << "This is unacceptable! I want to speak to the manager now.\n" << std::endl;
+	std::cout << "\nI don't really know how to complain, it messes with my beauty\n" << std::endl;
 }
 
 void	Harl::complain(std::string level)
