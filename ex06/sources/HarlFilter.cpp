@@ -51,27 +51,29 @@ void	HarlFilter::error(void)
 
 void	HarlFilter::complain(std::string level)
 {
-	for (int i = 0; i < 4; i++)
+	int i = 0;
+	while (i < 4)
 	{
 		if (level == this->level[i].first)
-		{
-			switch (i)
-			{
-				case 0:
-					(this->*(this->level[i].second))();
-					i++;
-				case 1:
-					(this->*(this->level[i].second))();
-					i++;
-				case 2:
-					(this->*(this->level[i].second))();
-					i++;
-				case 3:
-					(this->*(this->level[i].second))();
-					return;
-			}
-		}
+			break ;
+		i++;
 	}
-	std::cout << "[ Probably complaining about insignificant problems ]" << std::endl;
-	return;
+	switch (i)
+	{
+		case 0:
+			(this->*(this->level[i].second))();
+			i++;
+		case 1:
+			(this->*(this->level[i].second))();
+			i++;
+		case 2:
+			(this->*(this->level[i].second))();
+			i++;
+		case 3:
+			(this->*(this->level[i].second))();
+			break ;
+		default:
+			std::cout << "[ Probably complaining about insignificant problems ]" << std::endl;
+			return ;
+	}
 }
